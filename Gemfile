@@ -18,6 +18,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'devise'
+gem "bulma-rails", "~> 0.8.0"
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
