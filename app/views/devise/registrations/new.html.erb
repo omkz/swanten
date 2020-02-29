@@ -11,6 +11,24 @@
             </div>
           </div>
           <div class="field">
+            <%= f.label :username, class: "label" %>
+            <div class="control">
+              <%= f.text_field :username, class: "input"%>
+            </div>
+          </div>
+          <div class="field">
+            <%= f.label :first_name, class: "label" %>
+            <div class="control">
+              <%= f.text_field :first_name, class: "input"%>
+            </div>
+          </div>
+          <div class="field">
+            <%= f.label :last_name, class: "label" %>
+            <div class="control">
+              <%= f.text_field :last_name, class: "input"%>
+            </div>
+          </div>
+          <div class="field">
             <%= f.label :password , class: "label"%>
             <% if @minimum_password_length %>
               <em>(<%= @minimum_password_length %> characters minimum)</em>
