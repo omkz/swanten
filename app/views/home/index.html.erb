@@ -7,13 +7,13 @@
             <div class="media-left">
               <figure class="image is-64x64">
                 <%# <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image"> %>
-                <%= image_tag current_user.avatar if current_user.avatar.attached? %>
+                <%= image_tag post.user.avatar if post.user.avatar.attached? %>
               </figure>
             </div>
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong><%= current_user.first_name %></strong> <small>@<%= current_user.username %></small> <small>31m</small>
+                  <strong><%= post.user.first_name %></strong> <small>@<%= post.user.username %></small> <small>31m</small>
                   <br>
                   <%= post.title %>
                   <p>
