@@ -7,4 +7,9 @@ class User < ApplicationRecord
   has_many :posts
   has_one_attached :avatar
   
+  validates :avatar, presence: true
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :username, presence: true, uniqueness: true, length: {minimum: 3, maximum: 17}
+  
 end
