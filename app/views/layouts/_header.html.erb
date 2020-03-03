@@ -10,18 +10,11 @@
   <div class="navbar-menu" id="navbarBasicExample">
     <div class="navbar-start">
       <%= link_to 'Community', root_path, class: "navbar-item" %>
-      <a class="navbar-item">
-        Charts
-      </a>
-      <a class="navbar-item">
-        Events
-      </a>
-      <a class="navbar-item">
-        Store
-      </a>
-      <a class="navbar-item">
-        Blog
-      </a>
+      <%= link_to 'Charts', "#", class: "navbar-item" %>
+      <%= link_to 'Events', "#", class: "navbar-item" %>
+      <%= link_to 'Store', "#", class: "navbar-item" %>
+      <%= link_to 'Blog', "#", class: "navbar-item" %>
+      <%= link_to 'Podcast', "#", class: "navbar-item" %>
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           Discover
@@ -46,7 +39,7 @@
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
                 Logged in as <%= current_user.email %>
-              </a> 
+              </a>
               <div class="navbar-dropdown">
                 <%= link_to 'Dashboard', posts_path, class: "navbar-item" %>
                 <%= link_to 'Edit profile', edit_user_registration_path, class: "navbar-item" %>
